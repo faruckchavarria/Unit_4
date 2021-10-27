@@ -13,7 +13,7 @@ public class Empleado {
     {
 
 
-        if(Empleado == ("Vendedor"))
+        if(Empleado == "vendedor")
         {
             float salariomensual = 1000;
             float Salariototal = 0 ;
@@ -31,6 +31,7 @@ public class Empleado {
 
             horas = hExtras * 20;
             vendedor = Salariototal + horas;
+            return vendedor;
 
         }
         else if(Empleado ==("Encargado"))
