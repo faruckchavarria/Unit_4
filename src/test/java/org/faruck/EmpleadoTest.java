@@ -20,5 +20,8 @@ public class EmpleadoTest
     {
         Empleado rm = new Empleado();
         Assert.assertEquals(1760.0, rm.calculaSalarioBruto("Encargado", 1250,8), 0.001);
+        Assert.assertEquals(1600.0, rm.calculaSalarioBruto("Encargado", 1000,0), 0.001);
+        Assert.assertEquals(1560.0, rm.calculaSalarioBruto("Encargado", 999.99f,3), 0.001);
+        Assert.assertEquals(1500.0, rm.calculaSalarioBruto("Encargado", 500,0), 0.001);
     }
 }

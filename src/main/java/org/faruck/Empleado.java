@@ -41,6 +41,12 @@ public class Empleado {
             float horas;
             float encargado;
 
+            if(ventasMes < 1000)
+            {
+
+                horas = hExtras * 20;
+                return salariomensual + horas;
+            }
             if(ventasMes >= 1000)
             {
                 Salariototal= salariomensual + 100;
@@ -49,6 +55,7 @@ public class Empleado {
             {
                 Salariototal = salariomensual + 200;
             }
+
 
             horas = hExtras * 20;
             encargado = Salariototal + horas;
