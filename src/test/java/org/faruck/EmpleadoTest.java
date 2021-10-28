@@ -25,4 +25,10 @@ public class EmpleadoTest
         Assert.assertEquals(1500.0, rm.calculaSalarioBruto("Encargado", 500,0), 0.001);
         Assert.assertEquals(1660.0, rm.calculaSalarioBruto("Encargado", 0,8), 0.001);
     }
+    @Test
+    public void pruebaNeto()
+    {
+        Empleado js = new Empleado();
+        Assert.assertEquals(1050, js.calcularsalarioNeto(1250),0.001);
+    }
 }

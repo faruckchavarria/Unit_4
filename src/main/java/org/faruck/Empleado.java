@@ -64,10 +64,22 @@ public class Empleado {
 
         return 0;
     }
-    float calcularsalarioNeto(float salarioBruto)
+    public double calcularsalarioNeto(float salariobruto)
     {
-        float salariobruto = 0;
-        
+
+
+        if(salariobruto < 1000)
+        {
+            return salariobruto;
+        }
+        if(salariobruto >=1000 && salariobruto <1500)
+        {
+           return salariobruto - (salariobruto * 0.16);
+        }
+        if(salariobruto>1500)
+        {
+            return salariobruto - (salariobruto * 0.18);
+        }
 
         return 0;
     }
