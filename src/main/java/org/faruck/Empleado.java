@@ -2,13 +2,6 @@ package org.faruck;
 
 public class Empleado {
 
-    public String nombre;
-    public String apellido;
-    public String Cedula;
-    public String horas_entras;
-
-
-
     float calculaSalarioBruto(String Empleado, float ventasMes, float hExtras)
     {
 
