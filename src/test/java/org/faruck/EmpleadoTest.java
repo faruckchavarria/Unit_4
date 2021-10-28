@@ -30,5 +30,10 @@ public class EmpleadoTest
     {
         Empleado js = new Empleado();
         Assert.assertEquals(1050, js.calcularsalarioNeto(1250),0.001);
+        Assert.assertEquals(1640, js.calcularsalarioNeto(2000),0.001);
+        Assert.assertEquals(1259.9916, js.calcularsalarioNeto(1499.99f),0.001);
+        Assert.assertEquals(840, js.calcularsalarioNeto(1000),0.001);
+        Assert.assertEquals(999.99, js.calcularsalarioNeto(999.99f),0.001);
+        Assert.assertEquals(0, js.calcularsalarioNeto(0),0.001);
     }
 }
